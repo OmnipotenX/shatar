@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  overflow: hidden;
+}
+body {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  margin: 24vh 0 28vh;
+  position: fixed;
+}
+
+.canvas {
+  position: relative;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  background: url(../img/qipan.png);
+  background-size: 100% 100%;
+  box-shadow: hsl(0, 0%, 60%) -.1em .1em 3px, hsl(0, 0%, 45%) -.3em .3em 1px, rgba(0, 0, 0, 0.2) -.5em .5em 5px;
+}
+
+.box .buttons {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-around;
+}
+
+.buttons p {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: rgb(168, 135, 72);
+  border-radius: 13px;
+  box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, rgba(0, 0, 0, 0.2) 0 .5em 5px;
+}
+
+#changeBoard {
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  top: 13%;
+  bottom: 21%;
+  text-align: center;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+#changeBoard div {
+  height: 40px;
+}
+
+#changeBoard div p {
+  position: relative;
+  background: rgb(168, 135, 72);
+  color: #fff;
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  margin: 9% auto;
+  margin-bottom: 0;
+  display: block;
+  border-radius: 15px;
+  box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, rgba(0, 0, 0, 0.2) 0 .5em 5px;
+}
+
+.juesha {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 8%;
+  bottom: 16%;
+  display: none;
+  z-index: 100;
+}
+
+.jiang {
+  position: absolute;
+  left: 28%;
+  right: 28%;
+  top: 25%;
+  bottom: 25%;
+  display: none;
+  z-index: 100;
+}
+
+.jiang img {
+  width: 100%;
+  height: 100%;
+}
+
+.juesha img {
+  width: 100%;
+  height: 100%;
+}
+
+.warn {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 45%;
+  bottom: 45%;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  background: rgba(154, 110, 45, 0.77);
+  border: 1px solid rgba(255,255,255,.3);
+  display: none;
+}
